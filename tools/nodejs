@@ -1,0 +1,10 @@
+REM Check if node is installed (skip if already installed)
+echo Checking node installation...
+if not exist "C:\Program Files\nodejs\node.exe" (
+  echo node is not installed. Installing node...
+  curl -L -o "%download_folder%\node-installer.msi" "https://nodejs.org/dist/v18.18.0/node-v18.18.0-x64.msi"
+  msiexec /i  "%download_folder%\node-installer.msi"
+  del "%download_folder%\node-installer.msi"
+) else (
+  echo node is installed.
+)
