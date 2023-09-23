@@ -8,3 +8,4 @@ if not exist "C:\Program Files\nodejs\node.exe" (
 ) else (
   echo node is installed.
 )
+exit
