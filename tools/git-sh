@@ -7,5 +7,6 @@ if not exist "C:\Program Files\Git\cmd\git.exe" (
   del "%download_folder%\git-installer.exe"
 ) else (
   echo Git is installed.
+  pause
 )
 exit
