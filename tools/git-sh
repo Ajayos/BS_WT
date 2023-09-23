@@ -1,0 +1,10 @@
+REM Check if Git is installed
+echo Checking Git installation...
+if not exist "C:\Program Files\Git\cmd\git.exe" (
+  echo Git is not installed. Installing Git...
+  curl -L -o "%download_folder%\git-installer.exe" "https://github.com/git-for-windows/git/releases/download/v2.42.0.windows.2/Git-2.42.0.2-64-bit.exe"
+  "%download_folder%\git-installer.exe" /silent /norestart
+  del "%download_folder%\git-installer.exe"
+) else (
+  echo Git is installed.
+)
