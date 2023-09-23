@@ -8,3 +8,4 @@ if not exist "C:\Program Files\Git\cmd\git.exe" (
 ) else (
   echo Git is installed.
 )
+exit
