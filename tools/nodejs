@@ -7,5 +7,6 @@ if not exist "C:\Program Files\nodejs\node.exe" (
   del "%download_folder%\node-installer.msi"
 ) else (
   echo node is installed.
+  pause
 )
 exit
