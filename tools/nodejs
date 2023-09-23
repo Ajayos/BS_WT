@@ -1,3 +1,13 @@
+@echo off
+REM Set text color to green (Light Green on Black background)
+color 0A
+
+REM Set download folder
+set download_folder=%userprofile%\Downloads
+
+REM Set user profile folder
+set user_profile=%userprofile%
+
 REM Check if node is installed (skip if already installed)
 echo Checking node installation...
 if not exist "C:\Program Files\nodejs\node.exe" (
